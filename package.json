@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/horizons-school-of-technology/design-and-takehome-one#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "underscore": "^1.8.3",
+    "webpack": "^4.1.1"
   }
 }

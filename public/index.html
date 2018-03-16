@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link link rel="stylesheet" type="text/css" href="./game.css"/>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="./game.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    let spotsLeft;
+    let firstMove;
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
 </head>
 <body>
   <h1>Minesweeper Game</h1>
-  <div id="root"></div>
+  <div style="margin: 10px;">
+    <input type="number" max="15" placeholder="Rows (max: 15)" id="rows" />
+    <input type="number" max="15" placeholder="Columns (max: 15)" id="columns" />
+    <input type="number" max="200" placeholder="Mines (fewer than cells)" id="mines" />
+    <button id="start">Start Game</button>
+  </div>
+  <div id="flags" class="invisible">
+    <div style="flex: 1">Flags: </div>
+    <div id="flagCount"></div>
+  </div>
+  <div id="board" class="invisible"></div>
+  <script src="./game.js"></script>
 </body>
 </html>
