@@ -111,3 +111,7 @@ table {
 .flagged {
   background-color: red
 }
+
+.cleared {
+  background-color: #eee
+}
